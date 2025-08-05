@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Raswate - DevOps Engineer & Learner</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      margin: 0;
+      position: relative;
+      background: black;
+      background-image: linear-gradient(135deg, #1f2021 0%, #121314 100%);
+    }
+    .glass {
+      backdrop-filter: blur(14px) saturate(130%);
+      background-color: rgba(0,0,0,0.9);
+      border-radius: 1.2rem;
+      box-shadow: 0 14px 60px 0 rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,.14);
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      background: linear-gradient(45deg, #0fffc9, #0a7aff, #d662fc);
+      color: #121212;
+      padding: 0.5rem 1.1rem;
+      border-radius: 0.7rem;
+      font-weight: 800;
+      font-size: 1.05rem;
+      transition: transform 0.18s ease, box-shadow 0.15s ease;
+      box-shadow: 0 3px 20px rgba(54,182,255,0.45);
+      margin-bottom: 0.3rem;
+      display: inline-block;
+      cursor: default;
+    }
+    .badge:hover {
+      transform: scale(1.1) rotate(-2deg);
+      box-shadow: 0 7px 28px rgba(77,154,255,0.85);
+      filter: brightness(1.18);
+      cursor: pointer;
+    }
+    .motivation {
+      color: #e8f3ff;
+      font-size: 1.4rem;
+      letter-spacing: 0.7px;
+      margin-bottom: 1.1em;
+      text-shadow: 0 5px 18px rgba(0,40,120,0.35);
+      font-style: italic;
+    }
+    section {
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-bar {
+      width: 6px;
+      background: linear-gradient(180deg, #40e0ff 0%, #7f00ff 100%);
+      position: absolute;
+      left: 26px;
+      top: 0;
+      height: 100%;
+      border-radius: 3px;
+      z-index: 1;
+      opacity:0.88;
+    }
+    .timeline-dot {
+      background: #7f4bff;
+      border: 3px solid #def;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      z-index: 2;
+      position: absolute;
+      left: 21px;
+      top: 10px;
+      box-shadow: 0 0 12px 3px rgba(186,136,255,0.7);
+    }
+    a {
+      color: #8e9cff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #71aaff;
+    }
+  </style>
+</head>
+<body class="text-white font-sans overflow-x-hidden">
+
+  <!-- HERO HEADER -->
+  <header class="text-center py-14 animate__animated animate__fadeInDown glass max-w-5xl mx-auto px-6">
+    <h1 class="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 text-transparent bg-clip-text drop-shadow-lg">
+      Vikas Raswate
+    </h1>
+    <p class="text-2xl mt-6 opacity-90">DevOps Engineer | CI/CD Enthusiast | Cloud & Automation Explorer</p>
+    <div class="flex flex-col items-center justify-center mt-12 animate__animated animate__zoomIn">
+      <!-- Use your real photo here for personal branding -->
+      <img src="WhatsApp-Image-2025-03-20-at-10.06.46_b631a23d.jpg"
+         alt="Vikas Raswate"
+         class="w-48 h-48 rounded-full border-4 border-white shadow-2xl object-cover glass">
+      <div class="motivation mt-10 max-w-3xl glass px-10 py-8">
+        “The best way to predict the future of DevOps is to <b class='text-cyan-300'>create it</b>.<br>
+        <span class="text-teal-300">Keep learning, automating, and growing your career.</span>”
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT/JOURNEY/PASSION -->
+  <section class="max-w-3xl mx-auto px-8 mt-10 animate__animated animate__fadeInLeft glass py-10">
+
+      <h2 class="text-4xl font-bold mb-5">👋 About Me</h2>
+      <p class="text-xl mb-7 text-purple-300">
+        I’m Vikas, an engineer who believes that DevOps is not just a set of tools—it’s a mindset. It means bringing <span class="text-green-400 font-semibold">collaboration, curiosity, and a spirit of automation</span> to every project. I’m driven by a passion to:
+      </p>
+      <ul class="list-disc ml-8 text-lg mb-6 text-purple-400">
+        <li>Solve complex deployment puzzles and make software delivery <span class="text-green-500">effortless & magical</span></li>
+        <li>Automate everything that can be automated—for consistency, speed, and delight</li>
+        <li>Own my growth: always learning, always improving</li>
+      </ul>
+      <p class="text-purple-300 text-lg">
+        I love the “aha!” moment when <span class="text-yellow-300">an infrastructure-as-code script</span> springs a cloud environment to life, or when a green checkmark tells me the pipeline worked—again! Hands-on with AWS, Docker, CI/CD, and Kubernetes, I thrive on helping teams move faster and more confidently, one deployment at a time.
+      </p>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-8 mt-16 animate__animated animate__fadeInRight glass py-10">
+      <h2 class="text-4xl font-bold mb-6">🌱 My DevOps Philosophy</h2>
+      <blockquote class="italic text-lg px-8 border-l-8 border-teal-400 mb-6 text-purple-400">
+        “DevOps is not a destination, but a journey. You don’t just automate pipelines; <b>you help people work better together</b> and bring experiments to life, faster.”
+      </blockquote>
+      <ul class="list-disc ml-10 mb-6 text-lg text-purple-300">
+        <li><b>Feedback is gold:</b> Each failed build or alert isn’t an error, it’s an opportunity to make things stronger.</li>
+        <li><b>Learning never stops:</b> Today’s stack is tomorrow’s legacy—stay curious, stay humble.</li>
+        <li><b>Share knowledge:</b> My proudest moments: teaching a teammate a new tool, or documenting for the next engineer.</li>
+      </ul>
+  </section>
+
+  <section class="mt-20 px-8 animate__animated animate__zoomInDown max-w-6xl mx-auto">
+    <h2 class="text-4xl font-semibold mb-6 text-center glass rounded-3xl py-5 shadow-lg bg-gradient-to-r from-indigo-600 via-purple-700 to-indigo-900">
+      🛠️ Major Projects
+    </h2>
+    <div class="grid gap-10 md:grid-cols-3">
+      <div class="glass p-8 rounded-3xl shadow-xl transition hover:scale-105 flex flex-col relative z-10">
+        <h3 class="font-bold text-2xl mb-4">nopCommerce on AWS</h3>
+        <p class="flex-1 text-purple-200">Deployed nopCommerce eCommerce platform on AWS with MS SQL backend and ensured secure, high-availability connectivity. Practiced cloud networking and automated server setups.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl shadow-xl transition hover:scale-105 flex flex-col relative z-10">
+        <h3 class="font-bold text-2xl mb-4">EasyShop E-commerce</h3>
+        <p class="flex-1 text-purple-200">Built a cloud-native e-commerce app using Docker, Terraform, Jenkins, Argo CD, AWS EKS, NGINX and HTTPS. This taught me the real-world power of automating both infra provisioning & application delivery!</p>
+        <a href="https://github.com/vraswate21/e-commerce-app.git" target="_blank" class="mt-3 inline-block text-cyan-400 hover:text-cyan-500 underline font-semibold">Project Source</a>
+      </div>
+      <div class="glass p-8 rounded-3xl shadow-xl transition hover:scale-105 flex flex-col relative z-10">
+        <h3 class="font-bold text-2xl mb-4">Free Music Hub</h3>
+        <p class="flex-1 text-purple-200">A Django web app to stream/download free music. Built with PostgreSQL backend, aiming to add AI-powered music recommendations—applying automation to creativity!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-24 px-8 animate__animated animate__bounceInRight max-w-5xl mx-auto relative">
+    <h2 class="text-4xl font-semibold mb-8 text-center glass rounded-3xl py-5 shadow-xl bg-gradient-to-r from-purple-700 via-indigo-700 to-purple-900">
+      🚀 Experience & Growth
+    </h2>
+    <div class="absolute top-12 timeline-bar" style="height:380px;"></div>
+    <div class="relative mb-12 pl-20">
+      <div class="timeline-dot"></div>
+      <div class="glass p-6 rounded-2xl shadow-2xl max-w-xl mx-auto">
+        <h3 class="font-bold text-lg text-indigo-300">DevOps Trainee @ Quality Thought</h3>
+        <span class="text-purple-300">Mar 2025 – Present | Hyderabad</span>
+        <ul class="list-disc ml-6 mt-3 text-lg text-purple-300">
+          <li>Automated infra provisioning using Terraform & Ansible</li>
+          <li>Developed CI/CD with Jenkins & GitHub Actions</li>
+          <li>Containerized and deployed apps with Docker & K8s</li>
+          <li>Monitored infra with Prometheus & Grafana</li>
+        </ul>
+      </div>
+    </div>
+    <div class="relative pl-20">
+      <div class="timeline-dot" style="top:10px;"></div>
+      <div class="glass p-6 rounded-2xl shadow-2xl max-w-xl mx-auto">
+        <h3 class="font-bold text-lg text-purple-400">Continuous Learner</h3>
+        <ul class="list-disc ml-6 text-lg text-purple-300">
+          <li>Completed CI/CD and Infra as Code projects in 2025—solidifying pipelines and automation fundamentals</li>
+          <li>Currently building hands-on demos in Azure, practicing real skills with lifelong learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-24 px-8 animate__animated animate__fadeInUp">
+    <h2 class="text-4xl font-semibold mb-8 text-center">💡 Tools, Skills & Tech</h2>
+    <div class="flex flex-wrap justify-center gap-6 mb-1">
+      <span class="badge">AWS</span>
+      <span class="badge">Azure</span>
+      <span class="badge">Docker</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">Terraform</span>
+      <span class="badge">Ansible</span>
+      <span class="badge">GitHub Actions</span>
+      <span class="badge">Jenkins</span>
+      <span class="badge">Linux</span>
+      <span class="badge">Python</span>
+      <span class="badge">Bash</span>
+      <span class="badge">Prometheus</span>
+      <span class="badge">Grafana</span>
+      <span class="badge">NGINX</span>
+      <span class="badge">PostgreSQL</span>
+      <span class="badge">CI/CD</span>
+    </div>
+    <p class="text-center text-lg text-purple-300 mt-6 italic">
+      Each tool is a building block—a way to turn ideas into reality. My real skill is never stopping until things ‘just work’.
+    </p>
+  </section>
+
+  <section class="mt-20 px-8 animate__animated animate__fadeInUp text-center">
+    <h2 class="text-4xl font-semibold mb-8">📜 Certifications</h2>
+    <div class="glass inline-block px-14 py-10">
+      <p class="mb-3">AWS Cloud Practitioner Essentials <span class="text-green-400">– June 2025</span></p>
+      <p class="mb-3">AI Tools Workshop <span class="text-blue-400">– June 2024</span></p>
+      <p>30 Days DSA Bootcamp <span class="text-pink-400">– Unstop</span></p>
+    </div>
+  </section>
+
+  <section class="mt-20 px-8 max-w-3xl mx-auto animate__animated animate__fadeInUp">
+    <div class="glass px-10 py-9 text-center">
+      <h2 class="text-4xl font-semibold mb-8">🎓 Education</h2>
+      <p class="mb-4"><b>BCA (Bachelor of Computer Applications)</b><br>
+        MGM College Of CS & IT (06/2022 - 03/2025)
+      </p>
+      <p><b>HSC (Science)</b> <br>L.N.D.B College — <span class="text-yellow-400">86.06%</span></p>
+    </div>
+  </section>
+
+  <section class="mt-24 px-8 max-w-3xl mx-auto animate__animated animate__fadeIn">
+    <div class="glass px-8 py-9">
+      <h2 class="text-4xl font-semibold mb-6 text-center">🤝 Words From Mentors & Friends</h2>
+      <div class="mb-6">
+        <blockquote class="text-purple-400 mb-3 italic leading-relaxed text-lg">
+          “Vikas has the rare gift of turning complex infra chaos into a streamlined symphony. He always goes the extra mile to help the team.”
+        </blockquote>
+        <span class="text-teal-400 font-semibold">— Mentor, Quality Thought</span>
+      </div>
+      <div>
+        <blockquote class="text-purple-400 mb-3 italic leading-relaxed text-lg">
+          “Whenever we faced a deployment hurdle, Vikas was the one who debugged, explained, and automate all day long.”
+        </blockquote>
+        <span class="text-green-400 font-semibold">— Peer Engineer, Hackathon 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-24 px-8 animate__animated animate__fadeInUp text-center">
+    <h2 class="text-4xl font-semibold mb-10">📬 Let's Connect</h2>
+    <div class="glass px-16 py-8 inline-block">
+      <p class="mb-3">Email: <a href="mailto:vikasraswate711@gmail.com" class="underline hover:text-blue-400">vikasraswate711@gmail.com</a></p>
+      <p class="mb-3">Phone: <a href="tel:+918329458229" class="underline hover:text-blue-400">+91 8329458229</a></p>
+      <div class="mt-6">
+        <a href="https://github.com/vraswate21" target="_blank" class="underline mx-4 hover:text-blue-400">GitHub</a>
+        <a href="https://linkedin.com/in/vikas-raswate-b255352a6" target="_blank" class="underline mx-4 hover:text-blue-400">LinkedIn</a>
+      </div>
+      <div class="mt-10">
+        <a href="My_Resume_5.pdf" download class="bg-gradient-to-r from-cyan-400 to-indigo-600 text-black px-8 py-3 rounded shadow-lg font-bold transition hover:scale-105 hover:from-indigo-500 hover:to-purple-600">Download Resume</a>
+      </div>
+    </div>
+    <p class="mt-8 text-purple-300 italic max-w-3xl mx-auto">
+      I’m always open to collaborations, cool tech chats, and opportunities to help automate your next big idea! If you’re building something or want to talk DevOps, let’s connect.
+    </p>
+  </section>
+
+  <footer class="text-center mt-24 mb-10 animate__animated animate__fadeIn">
+    <p class="opacity-60">© 2025 Vikas Raswate. Made with 💻, ☁️ & ❤️ | Inspired by every team that values growth and automation.</p>
+  </footer>
+</body>
+</html>
