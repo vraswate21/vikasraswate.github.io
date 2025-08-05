@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vikas Raswate | DevOps Engineer</title>
+  <style>
+    :root {
+      --bg: #f0f4f8;
+      --text: #1f2937;
+      --card: white;
+      --accent: #2563eb;
+      --soft: #dbeafe;
+    }
+    body.dark { --bg: #111827; --text: #f9fafb; --card: #1e293b; --accent: #3b82f6; --soft: #1f2937; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; flex-direction: column; min-height: 100vh; transition: background 0.4s, color 0.4s; }
+    .intro-section { background-color: var(--soft); text-align: center; padding: 40px 20px 20px; }
+    .name { font-size: 40px; font-weight: bold; color: var(--text); margin-bottom: 10px; }
+    .title-bar { background-color: var(--accent); color: white; font-size: 18px; font-weight: bold; padding: 10px; text-align: center; }
+    .toggle-btn { position: absolute; top: 15px; right: 20px; background: var(--accent); border: none; color: white; padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+    .toggle-btn:hover { background: #1d4ed8; }
+    main { flex: 1; padding: 40px 20px; max-width: 1000px; margin: auto; }
+    section { background: var(--card); padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); margin-bottom: 30px; opacity: 0; transform: translateY(20px); animation: fadeIn 0.6s forwards; }
+    section:nth-of-type(1) { animation-delay: 0.2s; }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.8s; }
+    @keyframes fadeIn { to { opacity: 1; transform: none; } }
+    section h2 { color: var(--accent); margin-bottom: 15px; border-bottom: 2px solid var(--soft); padding-bottom: 10px; }
+    section ul { list-style-type: disc; padding-left: 20px; }
+    section ul li { margin-bottom: 10px; }
+    .project { margin-bottom: 15px; }
+    footer { text-align: center; padding: 20px; background-color: var(--soft); font-size: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media screen and (max-width: 600px) {
+      .name { font-size: 28px; }
+      .title-bar { font-size: 16px; }
+      .toggle-btn { padding: 6px 12px; top: 10px; right: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">🌗 Toggle Dark Mode</button>
+  <div class="intro-section">
+    <div class="name">VIKAS RASWATE</div>
+  </div>
+  <div class="title-bar">DevOps Engineer | Multi-Cloud | Automation Expert</div>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm Vikas Raswate — a passionate DevOps Engineer who believes in building not just infrastructure, but trust and reliability in every system I touch.</p>
+      <p>My journey began with curiosity — how does code become something real? That led me into Linux, cloud, containers, automation. Now, I empower teams to move faster and deploy safer.</p>
+      <p>I love building clean automation and zero-downtime deployments while bridging Devs & Ops with empathy.</p>
+    </section>
+    <section>
+      <h2>Core Skills</h2>
+      <ul>
+        <li>Cloud: AWS, Azure, GCP</li>
+        <li>IaC: Terraform</li>
+        <li>CI/CD: GitHub Actions, Jenkins</li>
+        <li>Containers: Docker, Kubernetes</li>
+        <li>Config Management: Ansible</li>
+        <li>Monitoring: Prometheus, Grafana</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="project"><strong>Terraform Multi-Cloud</strong><p>Reusable modules to deploy infra across AWS, Azure, GCP.</p></div>
+      <div class="project"><strong>GitHub Actions CI/CD</strong><p>Automated pipelines for containerized services to K8s.</p></div>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:vikasraswate711@gmail.com">vikasraswate711@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/vikas-raswate-b255352a6/" target="_blank">vikas-raswate</a></li>
+      </ul>
+    </section>
+    <div style="text-align: center; margin-bottom: 40px;">
+      <a href="Vikas_Raswate_Resume.pdf" download>
+        <button style="padding: 10px 20px; background-color: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer;">
+          📄 Download My Resume (PDF)
+        </button>
+      </a>
+    </div>
+  </main>
+  <footer>&copy; 2025 Vikas Raswate | DevOps Portfolio</footer>
+  <script>
+    if (localStorage.getItem('mode') === 'dark') {
+      document.body.classList.add('dark');
+    }
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('mode', document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+  </script>
+</body>
+</html>
